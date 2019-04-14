@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   width: 207px;
+
   @include list-style;
   padding-bottom: 25px;
 }
