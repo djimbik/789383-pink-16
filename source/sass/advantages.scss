@@ -1,9 +1,7 @@
 //advantages
 
 .advantages {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include container;
 }
 
 .advantages__container {
@@ -23,11 +21,8 @@
 }
 
 .advantages__list {
-  margin: 0 auto;
-  padding: 0;
+  @include list-style;
   padding-top: 80px;
-
-  list-style: none;
 
   text-align: center;
   background-color: #f2f2f2;

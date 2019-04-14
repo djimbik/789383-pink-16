@@ -1,4 +1,6 @@
 @import "common.scss";
+@import "normalize.scss";
+@import "mixin.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
@@ -6,10 +8,9 @@
 @import "page-main.scss";
 @import "advantages.scss";
 @import "advantage.scss";
-@import "photo-header.scss";
+@import "inner-header.scss";
 @import "photos.scss";
 @import "photo-item.scss";
 @import "page-footer.scss";
 @import "social.scss";
 @import "copyright.scss";
-@import "form-header.scss";

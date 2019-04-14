@@ -1,15 +1,18 @@
 //site-list
 
 .site-list {
-  margin: 0 auto;
-  padding: 0;
+  @include list-style;
+  padding-bottom: 395px;
+}
 
-  list-style: none;
+.site-list--secondary{
+  padding-bottom: 170px;
 }
 
 .site-list__item {
   padding-top: 15px;
   padding-bottom: 15px;
+
 
   border-bottom: 1px solid #000101;
   border-top: 1px solid #485461;
