@@ -1,11 +1,5 @@
 //mixin
 
-@mixin container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 @mixin list-style {
   margin: 0;
   padding: 0;
