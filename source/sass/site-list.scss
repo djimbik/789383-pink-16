@@ -1,0 +1,24 @@
+//site-list
+
+.site-list {
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #000101;
+  border-top: 1px solid #485461;
+
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #293745;
+}
+
+.site-list__item a {
+  color: #ffffff;
+}

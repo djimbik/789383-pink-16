@@ -1,0 +1,28 @@
+//photo-header
+
+.photo-header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 93px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 250px;
+  background-color: #2a3746;
+  background-size: cover;
+}
+
+.photo-header__title {
+  width: 175px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 30px;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}

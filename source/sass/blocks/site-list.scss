@@ -1,0 +1,16 @@
+//site-list
+
+.site-list {
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  background-color: #293745;
+}
+
+.site-list__item a {
+  color: white;
+}

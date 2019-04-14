@@ -1,0 +1,79 @@
+//intro
+
+.intro {
+  position: absolute;
+  bottom: -270px;
+
+  width: 320px;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  background-color: #1d2631;
+}
+
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.intro__save-button {
+  display: flex;
+  margin-bottom: 32px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 36px;
+  padding-right: 35px;
+
+  line-height: 18px;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+}
+
+.intro__list {
+  display: flex;
+  justify-content: space-between;
+  width: 207px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 25px;
+
+  list-style: none;
+}
+
+.intro__application {
+  display: inline-block;
+  width: 47px;
+  height: 56px;
+}
+
+.intro__application--apple {
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro__application--android {
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.intro__application--windows {
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
