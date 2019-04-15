@@ -1,0 +1,25 @@
+//advantages
+
+.advantages__container {
+  padding-top: 40px;
+}
+
+.advantages__intro {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  color: #283645;
+  text-align: center;
+}
+
+.advantages__list {
+  @include list-style;
+  padding-top: 80px;
+
+  text-align: center;
+  background-color: #f2f2f2;
+}

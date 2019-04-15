@@ -1,0 +1,65 @@
+// common.scss
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+
+  background-color: #283645;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

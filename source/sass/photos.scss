@@ -1,0 +1,22 @@
+//photos
+
+.photos {
+  padding-top: 44px;
+}
+
+.photos__title {
+  width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 48px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-align: center;
+}
+
+.photos__list {
+  @include list-style;
+}

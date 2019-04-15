@@ -1,0 +1,27 @@
+//site-list
+
+.site-list {
+  @include list-style;
+  padding-bottom: 395px;
+}
+
+.site-list--secondary {
+  padding-bottom: 170px;
+}
+
+.site-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+
+  border-bottom: 1px solid #000101;
+  border-top: 1px solid #485461;
+
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #293745;
+}
+
+.site-list__item a {
+  color: #ffffff;
+}

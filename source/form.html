@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк-Конкурс</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Пинк логотип">
+  <header class="inner-header container">
+    <a class="inner-header__logo" href="#">
+      <img class="inner-header__logo-image" src="" width="" height="" alt="Пинк логотип">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--secondary">
         <li class="site-list__item">
           <a>Главная</a>
         </li>
@@ -28,27 +29,35 @@
         </li>
       </ul>
     </nav>
-    <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </header>
-  <main class="page-main">
+  <main class="page-main container">
+    <h2 class="page-main__title page-main__title--form-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     <!-- Форма -->
   </main>
   <footer class="page-footer">
     <img class="page-footer__logo" src="">
     <ul class="social">
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">Pink в Твиттер</a>
+        <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden"> Pink в Твиттер</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Pink в Фейсбук</a>
+        <a class="social__link social__link--facebook" href="#">
+          <span class="visually-hidden">Pink в Фейсбук</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">Pink в Ютуб</a>
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">Pink в Ютуб</span>
+        </a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </div>
   </footer>
 </body>

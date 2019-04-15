@@ -1,0 +1,32 @@
+//page-main
+
+.page-main {
+  position: relative;
+
+  background-color: #ffffff;
+}
+
+.page-main__title {
+  position: absolute;
+  top: -166px;
+  left: 76px;
+
+  width: 175px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 30px;
+
+  background-color: transparent;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-main__title--form-title {
+  left: 40px;
+
+  width: 240px;
+}
