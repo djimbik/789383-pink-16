@@ -1,1 +1,13 @@
 //main-nav
+
+@media (min-width: 1200px) {
+  .main-nav {
+    width: 1200px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

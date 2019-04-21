@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+.intro__title {
+  display: none;
+}
+
 .intro__save-button {
   display: flex;
   margin-bottom: 32px;
@@ -33,6 +37,7 @@
   width: 207px;
 
   @include list-style;
+  margin: 0 auto;
   padding-bottom: 25px;
 }
 
@@ -66,4 +71,73 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  .intro {
+    padding: 0;
+    padding-bottom: 110px;
+
+    background-color: transparent;
+  }
+
+  .intro__wrapper {
+    width: 300px;
+    padding-top: 90px;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .intro__title {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .intro__save-button {
+    margin-bottom: 45px;
+  }
+
+  .intro__list {
+    margin-bottom: 30px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    width: 300px;
+    margin: 0;
+    margin-left: 130px;
+    padding: 0;
+    padding-bottom: 110px;
+    padding-top: 115px;
+  }
+
+  .intro__wrapper {
+    padding: 0;
+  }
+
+  .intro__title {
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    font-size: 50px;
+  }
+
+  .intro__save-button {
+    margin-bottom: 67px;
+  }
 }

@@ -9,7 +9,8 @@
 .page-main__title {
   position: absolute;
   top: -166px;
-  left: 76px;
+  left: 22.81%;
+  right: 22.81%;
 
   width: 175px;
   margin: 0 auto;
@@ -26,7 +27,45 @@
 }
 
 .page-main__title--form-title {
-  left: 40px;
+  left: 12.5%;
+  right: 12.5%;
 
   width: 240px;
+}
+
+@media (min-width: 660px) {
+  .page-main__title {
+    position: absolute;
+    top: -240px;
+    left: 21.97%;
+    right: 21.97%;
+
+    width: 370px;
+    padding: 0;
+
+    font-size: 50px;
+  }
+
+  .page-main__title--form-title {
+    left: 13.64%;
+    right: 13.64%;
+
+    width: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__title {
+    position: absolute;
+    top: -200px;
+    left: 34.58%;
+    right: 34.58%;
+  }
+
+  .page-main__title--form-title {
+    left: 18.75%;
+    right: 18.75%;
+
+    width: 750px;
+  }
 }
