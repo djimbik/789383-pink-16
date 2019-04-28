@@ -3,35 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк-Фото</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="inner-header container">
-    <a class="inner-header__logo" href="#">
-      <img class="inner-header__logo-image" src="" width="" height="" alt="Пинк логотип">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list site-list--secondary">
-        <li class="site-list__item">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a>HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="" width="" height="" alt="Пинк логотип">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list site-list--secondary">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a>HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="page-main">
-    <h2 class="page-main__title">Фотографии пользователей</h2>
+  <main class="page-main page-main--inner">
+    <div class="page-main__wrapper">
+      <h2 class="page-main__title">Фотографии пользователей</h2>
+    </div>
     <section class="photos">
       <p class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!
         Видите,&nbsp;как не хватает ваших?</p>

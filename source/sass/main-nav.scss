@@ -1,12 +1,6 @@
 //main-nav
 
-@media (min-width: 1200px) {
-  .main-nav {
-    width: 1200px;
-
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
+@media (min-width: 960px) {
   .main-nav__toggle {
     display: none;
   }

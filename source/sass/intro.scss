@@ -76,14 +76,13 @@
 @media (min-width: 660px) {
   .intro {
     padding: 0;
-    padding-bottom: 110px;
+    padding-bottom: 90px;
 
     background-color: transparent;
   }
 
   .intro__wrapper {
     width: 300px;
-    padding-top: 90px;
     margin: 0;
     margin-left: 20px;
   }
@@ -115,14 +114,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .intro {
     width: 300px;
     margin: 0;
     margin-left: 130px;
     padding: 0;
-    padding-bottom: 110px;
-    padding-top: 115px;
+    padding-bottom: 109px;
   }
 
   .intro__wrapper {

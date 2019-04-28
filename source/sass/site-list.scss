@@ -2,11 +2,10 @@
 
 .site-list {
   @include list-style;
-  padding-bottom: 395px;
 }
 
 .site-list--secondary {
-  padding-bottom: 170px;
+  // padding-bottom: 170px;
 }
 
 .site-list__item {
@@ -35,12 +34,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .site-list {
     display: flex;
     justify-content: space-between;
 
-    margin-left: 449px;
+    margin-left: 173px;
     width: 621px;
   }
 
