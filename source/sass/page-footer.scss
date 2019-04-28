@@ -6,3 +6,33 @@
 
   background-color: #ffffff;
 }
+
+.page-footer--main {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-footer--main {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 620px;
+  }
+
+  .page-footer__logo {
+    display: flex;
+
+    width: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 940px;
+  }
+}

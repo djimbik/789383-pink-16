@@ -1,0 +1,17 @@
+//intro-wrapper
+
+.intro-wrapper {
+  padding-top: 462px;
+}
+
+@media (min-width: 660px) {
+  .intro-wrapper {
+    padding-top: 204px;
+  }
+}
+
+@media (min-width: 960px) {
+  .intro-wrapper {
+    padding-top: 228px;
+  }
+}

@@ -16,3 +16,50 @@
   font-weight: 400;
   color: #283645;
 }
+
+.advantage__description--img {
+  margin-bottom: 0;
+}
+
+.advantage__img {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .advantage__description {
+    width: 310px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .advantage {
+    padding: 0;
+  }
+
+  .advantage__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0 40px;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantage__description {
+    width: 248px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantage__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

@@ -3,89 +3,141 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header container">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="" width="" height="" alt="Пинк логотип">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a>HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="intro container">
-        <div class="intro__wrapper">
-          <a class="intro__save-button button" href="#">Скачать приложение</a>
-          <ul class="intro__list">
-            <li class="intro__item">
-              <a class="intro__application intro__application--apple" href="#">
-                <span class="visually-hidden">ссылка для apple</span>
-              </a>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="" width="" height="" alt="Пинк логотип">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
             </li>
-            <li class="intro__item">
-              <a class="intro__application intro__application--android" href="#">
-                <span class="visually-hidden">ссылка для android</span>
-              </a>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
             </li>
-            <li class="intro__item">
-              <a class="intro__application intro__application--windows" href="#">
-                <span class="visually-hidden">ссылка для windows phone</span>
-              </a>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a>HTML Academy</a>
             </li>
           </ul>
-          <p class="intro__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </section>
+        </nav>
+      </div>
     </header>
-    <main class="page-main container">
+    <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink</h1>
-      <section class="advantages container">
+      <div class="intro-wrapper">
+        <section class="intro"> <!--main -->
+          <div class="intro__wrapper">
+            <p class="intro__title">Взгляните на жизнь иначе!</p>
+            <a class="intro__save-button button" href="#">Скачать приложение</a>
+            <ul class="intro__list">
+              <li class="intro__item">
+                <a class="intro__application intro__application--apple" href="#">
+                  <span class="visually-hidden">ссылка для apple</span>
+                </a>
+              </li>
+              <li class="intro__item">
+                <a class="intro__application intro__application--android" href="#">
+                  <span class="visually-hidden">ссылка для android</span>
+                </a>
+              </li>
+              <li class="intro__item">
+                <a class="intro__application intro__application--windows" href="#">
+                  <span class="visually-hidden">ссылка для windows phone</span>
+                </a>
+              </li>
+            </ul>
+            <p class="intro__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <div class="advantages__container">
+        <div class="advantages__container container">
           <p class="advantages__intro">Устали от серости мегаполиса?</p>
-          <p class="advantages__intro">Нам есть, что вам предложить!</p>
+          <p class="advantages__intro advantages__intro--second">Нам есть, что вам предложить!</p>
         </div>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantage">
+              <img class="advantage__img" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="Серая фотография">
               <h3 class="advantage__title">Поднимает настроение</h3>
               <p class="advantage__description">Приложение позволит вам
               победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantage">
+              <img class="advantage__img" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="Розовая фотография">
               <h3 class="advantage__title">Меняет мир вокруг</h3>
               <p class="advantage__description">Сделайте снимок и украсьте
               его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantage">
+              <img class="advantage__img" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="Розовая фотография с улыбкой">
               <h3 class="advantage__title">Заводит новых друзей</h3>
-              <p class="advantage__description">Ставьте лайки, комментируйте,
+              <p class="advantage__description advantage__description--img">Ставьте лайки, комментируйте,
               делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-            <p class="advantages__screen-img">
-              <img class="advantages__screen-picture" src="" width="" height="" alt="">
-            </p>
+          <p class="advantages__screen-img">
+            <img class="advantages__screen-picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото со смаиликом">
+          </p>
+        </div>
+      </section>
+      <section class="impact">
+        <div class="impact__wrapper container">
+          <div class="impact__image">
+            <img class="impact__watch" src="img/timer24.png" width="298" height="345" alt="Иконка часов">
+          </div>
+          <div class="impact__description">
+            <b class="impact__title">Эффект на 24 часа!</b>
+            <p class="impact__text">Британские ученые провели исследования
+              и доказали, что&nbsp;положительный эффект
+              от&nbsp;использования приложения длится
+              целые сутки!</p>
+            <a class="impact__detailes" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="page-footer page-footer--main">
+      <div class="page-footer__wrapper container">
+        <img class="page-footer__logo" src="" alt="Логотип Пинк">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden"> Pink в Твиттер</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Pink в Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Pink в Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

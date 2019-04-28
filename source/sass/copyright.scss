@@ -1,8 +1,18 @@
 //copyright
 
+.copyright {
+  width: 150px;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #283645;
+}
+
+@media (min-width: 1200px) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }

@@ -1,8 +1,17 @@
 //social
 
 .social {
-  margin: 0;
-  padding: 0;
+  @include list-style;
+}
 
-  list-style: none;
+@media (min-width: 660px) {
+  .social {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social {
+    width: 640px;
+  }
 }
