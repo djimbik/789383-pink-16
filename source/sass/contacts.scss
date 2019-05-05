@@ -1,0 +1,167 @@
+//contacts
+
+.contacts {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 32px;
+  margin-bottom: 24px;
+
+  border: none;
+}
+
+.contacts__title {
+  display: none;
+}
+
+.contacts__item label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 23px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.contacts__input {
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+  padding-right: 62px;
+  margin-bottom: 18px;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+}
+
+.contacts__input:hover,
+.contacts__input:focus {
+  border: 2px solid #283645;
+}
+
+.contacts__input:active {
+  border: 2px solid #d22856;
+}
+
+input.contacts__input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+@media (min-width: 660px) {
+  .contacts {
+    width: 616px;
+    margin-bottom: 42px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .contacts__title {
+    display: block;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #d22856;
+    text-transform: uppercase;
+  }
+
+  .contacts__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 0 58px;
+  }
+
+  .contacts__item label {
+    margin-bottom: 29px;
+  }
+
+  .contacts__input {
+    margin-bottom: 10px;
+  }
+
+  .contacts__item--phone::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 498px;
+    z-index: 100;
+
+    width: 59px;
+    height: 61px;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+  }
+
+  .contacts__item--mail::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 498px;
+    z-index: 100;
+
+    width: 59px;
+    height: 61px;
+
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts {
+    width: 936px;
+    margin-bottom: 50px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    width: 820px;
+  }
+
+  .contacts__item {
+    width: 375px;
+    padding: 0;
+  }
+
+  .contacts__item label {
+    margin-bottom: 13px;
+  }
+
+  .contacts__item--phone {
+    margin-right: 70px;
+    padding-left: 58px;
+  }
+
+  .contacts__input {
+    width: 375px;
+  }
+
+  .contacts__item--phone::after {
+    left: 373px;
+  }
+
+  .contacts__item--mail::after {
+    left: 314px;
+  }
+}

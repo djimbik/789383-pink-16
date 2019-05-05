@@ -1,0 +1,89 @@
+//user-data
+
+.user-data {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+
+  border: none;
+}
+
+.user-data__item {
+  margin: 0;
+  padding: 0;
+}
+
+.user-data__item label {
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.user-data__name {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  margin-bottom: 18px;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+}
+
+.user-data__name:hover,
+.user-data__name:focus {
+  border: 2px solid #283645;
+}
+
+.user-data__name:active {
+  border: 2px solid #d22856;
+}
+
+input.user-data__name::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+@media (min-width: 660px) {
+  .user-data__item {
+    display: flex;
+
+    vertical-align: middle;
+  }
+
+  .user-data__item label {
+    margin-right: 20px;
+    padding-top: 13px;
+
+    vertical-align: middle;
+  }
+
+  .user-data__name {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: 960px) {
+  .user-data {
+    margin: 0;
+    width: 436px;
+  }
+
+  .user-data__wrapper {
+    width: 436px;
+  }
+
+  .user-data__item {
+    width: 436px;
+  }
+}

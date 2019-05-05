@@ -2,18 +2,6 @@
 
 .page-main {
   position: relative;
-
-  background-image:
-    url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-tablet@1x.jpg");
-  background-repeat: no-repeat;
-  background-size:
-    auto,
-    660px 462px;
-  background-position:
-    center 176px,
-    center top;
-  background-color: #2a3746;
 }
 
 .page-main--inner {
@@ -36,36 +24,39 @@
   margin: 0 auto;
   padding: 0;
 
-  background-color: transparent;
-
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+
+  background-color: transparent;
 }
 
 .page-main__title--form-title {
   width: 240px;
 }
 
+.page-main__description {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  padding-top: 45px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.page-main__description span {
+  display: none;
+}
+
 @media (min-width: 660px) {
-  .page-main {
-    min-height: 729px;
-    margin: 0 auto;
-
-    background-image:
-      url("../img/iphone-hand-tablet@1x.png"),
-      url("../img/bg-back-tablet@1x.jpg");
-    background-size:
-      auto,
-      auto;
-    background-position:
-      center 185px,
-      center top;
-    background-color: #283645;
-  }
-
   .page-main--inner {
     min-height: auto;
 
@@ -89,26 +80,22 @@
   .page-main__title--form-title {
     width: 480px;
   }
+
+  .page-main__description {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding-top: 93px;
+
+    font-size: 18px;
+  }
+
+  .page-main__description span {
+    display: block;
+  }
 }
 
 @media (min-width: 960px) {
-  .page-main {
-    min-height: 853px;
-    padding-bottom: 0;
-
-    background-image:
-      url("../img/iphone-hand-desktop@1x.png"),
-      url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size:
-      auto,
-      auto;
-    background-position:
-      center 209px,
-      center top;
-    background-color: transparent;
-  }
-
   .page-main--inner {
     min-height: auto;
 
@@ -124,5 +111,14 @@
 
   .page-main__title--form-title {
     width: 750px;
+  }
+
+  .page-main__description {
+    width: 765px;
+    margin-bottom: 65px;
+  }
+
+  .page-main__description span {
+    display: inline;
   }
 }
