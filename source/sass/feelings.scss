@@ -44,7 +44,7 @@
   border: 2px solid #d22856;
 }
 
-textarea.feelings__text::placeholder {
+.feelings__text::placeholder {
   display: block;
   padding-left: 20px;
   padding-top: 15px;
@@ -73,6 +73,8 @@ textarea.feelings__text::placeholder {
     width: 496px;
     margin: 0 auto;
     margin-bottom: 51px;
+
+    resize: none;
   }
 }
 

@@ -41,7 +41,7 @@
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--first site-list__item--active">
-              <a href="#">Главная</a>
+              <a>Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
@@ -50,7 +50,7 @@
               <a href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -157,7 +157,7 @@
             </div>
 
           </blockquote>
-          <div class="reviews__toggles slider"> <!-- застилизую позже -->
+          <div class="slider slider--reviews"> <!-- застилизую позже -->
             <button class="slider__toggle slider__toggle--active" type="button">
               <span class="visually-hidden">Первый отзыв</span>
             </button>
@@ -171,8 +171,51 @@
         </div>
       </section>
       <section class="price">
+        <!-- контейнер для таблицы (моб), сместить на трансформе/транслейт -->
         <!-- Таблица -->
-
+        <div class="price__wrapper">
+          <table class="price__list">
+            <thead class="price__list-head">
+              <tr>
+                <th class="price__value price__value--empty"></th>
+                <th class="price__value price__value--first">База<span class="price__cost">1,99 USD</span></th>
+                <th class="price__value price__value--hit">Стандарт<span class="price__cost">3,99 USD</span></th>
+                <th class="price__value">Анлим<span class="price__cost">9,99 USD</span></th>
+              </tr>
+            </thead>
+            <tbody class="price__list-body">
+              <tr>
+                <td class="price__field price__field--empty price__field--first">Розовый фильтр</td>
+                <td class="price__field price__field--yes"><span class="price__text">Розовый фильтр</span></td>
+                <td class="price__field price__field--yes"><span class="price__text">Розовый фильтр</span></td>
+                <td class="price__field price__field--yes price__field--last"><span class="price__text">Розовый фильтр</span></td>
+              </tr>
+              <tr>
+                <td class="price__field price__field--empty">Смайлики</td>
+                <td class="price__field price__field--no"><span class="price__text">Смайлики</span></td>
+                <td class="price__field price__field--yes"><span class="price__text">Смайлики</span></td>
+                <td class="price__field price__field--yes price__field--last"><span class="price__text">Смайлики</span></td>
+              </tr>
+              <tr>
+                <td class="price__field price__field--empty">Комментарии</td>
+                <td class="price__field price__field--no"><span class="price__text">Комментарии</span></td>
+                <td class="price__field price__field--no"><span class="price__text">Комментарии</span></td>
+                <td class="price__field price__field--yes price__field--last"><span class="price__text">Комментарии</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="slider slider--table">
+            <button class="slider__toggle " type="button">
+              <span class="visually-hidden">Первый отзыв</span>
+            </button>
+            <button class="slider__toggle slider__toggle--active" type="button">
+              <span class="visually-hidden">Второй отзыв</span>
+            </button>
+            <button class="slider__toggle " type="button">
+              <span class="visually-hidden">Третий отзыв</span>
+            </button>
+          </div>
       </section>
       <section class="address">
         <div class="address__wrapper">
@@ -193,7 +236,7 @@
             <span class="address__description">ул. Большая<br> Конюшенная, 19/8</span>
           </p>
         </div>
-        <div class="map">
+        <div class="map"> <!-- в футер -->
           <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="PINK на карте">
         </div>
       </section>
