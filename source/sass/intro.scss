@@ -127,13 +127,14 @@
 @media (min-width: 960px) {
   .intro {
     width: 300px;
-    margin: 0;
+    margin: 0 auto;
     margin-left: 130px;
     padding: 0;
     padding-bottom: 109px;
   }
 
   .intro__wrapper {
+    margin: 0 auto;
     padding: 0;
   }
 

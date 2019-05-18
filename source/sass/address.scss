@@ -5,8 +5,8 @@
 }
 
 .address__wrapper {
-  position: relative;
-  z-index: 5;
+  // position: relative;
+  // z-index: 5;
 
   width: 320px;
   margin: 0 auto;
@@ -18,21 +18,21 @@
 
   background-color: #ffffff;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 445px;
-    left: 0;
-    z-index: 100;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 445px;
+  //   left: 0;
+  //   z-index: 100;
 
-    width: 320px;
-    height: 123px;
+  //   width: 320px;
+  //   height: 123px;
 
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-  }
+  //   background-image: url("../img/bg-triangle-white-footer.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: top center;
+  //   background-size: 100%;
+  // }
 }
 
 .address__title {

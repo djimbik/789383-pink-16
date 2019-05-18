@@ -163,8 +163,9 @@
                   </svg>
                 </button>
                 <div class="adj-list__controls adj-list__controls--active">
-                  <div class="adj-list__scale"></div>
-                  <button class="adj-list__toggle adj-list__toggle--crop" type="button"></button>
+                  <!-- <div class="adj-list__scale"></div>
+                  <button class="adj-list__toggle adj-list__toggle--crop" type="button"></button> -->
+                  <input type="range" min="0" max="100" value="81" class="adj-list__range adj-list__range--crop">
                 </div>
               </div>
               <div class="adj-list__item adj-list__item--fill">
@@ -177,8 +178,9 @@
                   </svg>
                 </button>
                 <div class="adj-list__controls">
-                  <div class="adj-list__scale"></div>
-                  <button class="adj-list__toggle adj-list__toggle--fill" type="button"></button>
+                  <!-- <div class="adj-list__scale"></div>
+                  <button class="adj-list__toggle adj-list__toggle--fill" type="button"></button> -->
+                  <input type="range" min="0" max="100" value="16" class="adj-list__range">
                 </div>
               </div>
               <div class="adj-list__item adj-list__item--contrast">
@@ -190,14 +192,15 @@
                   </svg>
                 </button>
                 <div class="adj-list__controls">
-                  <div class="adj-list__scale"></div>
-                  <button class="adj-list__toggle adj-list__toggle--contrast" type="button"></button>
+                  <!-- <div class="adj-list__scale"></div>
+                  <button class="adj-list__toggle adj-list__toggle--contrast" type="button"></button> -->
+                  <input type="range" min="0" max="100" value="50" class="adj-list__range">
                 </div>
               </div>
             </div>
             <div class="user-photo__button-wrapper">
               <button class="user-photo__button user-photo__button--submit" type="submit">Запостить</button>
-              <button class="user-photo__button user-photo__button--cancel" type="button">Отмена</button>
+              <button class="user-photo__button user-photo__button--cancel" type="reset">Отмена</button>
             </div>
           </div>
         </div>
