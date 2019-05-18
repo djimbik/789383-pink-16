@@ -31,6 +31,16 @@
   border-radius: 40px;
 }
 
+.intro__save-button:hover,
+.intro__save-button:focus {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.intro__save-button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .intro__list {
   display: flex;
   justify-content: space-between;
@@ -117,13 +127,14 @@
 @media (min-width: 960px) {
   .intro {
     width: 300px;
-    margin: 0;
+    margin: 0 auto;
     margin-left: 130px;
     padding: 0;
     padding-bottom: 109px;
   }
 
   .intro__wrapper {
+    margin: 0 auto;
     padding: 0;
   }
 

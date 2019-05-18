@@ -1,6 +1,167 @@
 //main-nav
 
+.main-nav {
+  position: absolute;
+  z-index: 10;
+
+  width: 100%;
+}
+
+.main-nav__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #000101;
+}
+
+.main-nav__inner-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.main-nav__toggle {
+  width: 50px;
+  height: 22px;
+
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__toggle:hover path,
+.main-nav__toggle:focus path {
+  fill: #d22856;
+}
+
+.main-nav__toggle:active path {
+  opacity: 0.3;
+}
+
+.main-nav__logo {
+  height: 22px;
+}
+
+.main-nav__logo:hover path,
+.main-nav__logo:focus path {
+  fill: #d22856;
+}
+
+.main-nav__logo:active path {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  background-color: #283645;
+}
+
+.main-nav--opened .main-nav__toggle-svg {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: relative;
+
+  width: 24px;
+  height: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 25px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover,  // не понятно что тут делать
+.main-nav--opened .main-nav__toggle:focus {
+  // background-color: #d22856;
+}
+
+.main-nav--opened .main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs {
+  position: static;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  background-color: #283645;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .main-nav__inner-wrapper {
+    width: 620px;
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  .main-nav__logo {
+    height: 40px;
+  }
+}
+
 @media (min-width: 960px) {
+  .main-nav {
+    display: flex;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__desktop-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__wrapper {
+    background-color: transparent;
+    border: none;
+  }
+
+  .main-nav__inner-wrapper {
+    width: 150px;
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
   .main-nav__toggle {
     display: none;
   }

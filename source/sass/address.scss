@@ -1,0 +1,152 @@
+//address
+
+.address {
+  background-color: #ffffff;
+}
+
+.address__wrapper {
+  // position: relative;
+  // z-index: 5;
+
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 445px;
+  //   left: 0;
+  //   z-index: 100;
+
+  //   width: 320px;
+  //   height: 123px;
+
+  //   background-image: url("../img/bg-triangle-white-footer.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: top center;
+  //   background-size: 100%;
+  // }
+}
+
+.address__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+  color: #283645;
+}
+
+.address__text {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.address__action {
+  margin-bottom: 2px;
+
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  color: #283645;
+}
+
+.address__description {
+  display: inline-block;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+  color: #d22856;
+}
+
+.address__description--mail:hover,
+.address__description--mail:focus {
+  color: #283645;
+  border-bottom: 1px solid #283645;  // доделать, прыгает текст, не понятно что делать с этим
+
+  cursor: pointer;
+}
+
+.address__description--mail:active {
+  opacity: 0.3;
+
+  border: none;
+}
+
+@media (min-width: 660px) {
+  .address__wrapper {
+    width: 660px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &::after {
+      width: 660px;
+    }
+  }
+
+  .address__title {
+    width: 660px;
+
+    font-size: 40px;
+  }
+
+  .address__text {
+    width: 300px;
+    margin-bottom: 48px;
+  }
+
+  .address__text--street {
+    width: 660px;
+  }
+}
+
+@media (min-width: 960px) {
+  .address__wrapper {
+    width: 960px;
+    padding: 0;
+    padding-top: 70px;
+
+    &::after {
+      width: 960px;
+      top: 395px;
+    }
+  }
+
+  .address__title {
+    width: 960px;
+    margin-bottom: 55px;
+
+    font-size: 50px;
+  }
+
+  .address__text {
+    width: 300px;
+  }
+
+  .address__text--mail {
+    order: 4;
+  }
+
+  .address__action {
+    margin-bottom: 25px;
+  }
+}

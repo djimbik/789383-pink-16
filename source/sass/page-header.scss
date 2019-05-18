@@ -3,24 +3,3 @@
 .page-header {
   position: relative;
 }
-
-.page-header__wrapper {
-  position: absolute;
-  z-index: 10;
-
-  width: 100%;
-}
-
-@media (min-width: 960px) {
-  .page-header__wrapper {
-    display: flex;
-
-    width: 100%;
-
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .page-header__logo {
-    margin-left: 130px;
-  }
-}
