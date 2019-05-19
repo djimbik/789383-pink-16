@@ -92,30 +92,35 @@
           <p class="advantages__intro">Устали от серости мегаполиса?</p>
           <p class="advantages__intro advantages__intro--second">Нам есть, что вам предложить!</p>
         </div>
-        <div class="advantages__wrapper">
-          <ul class="advantages__list">
-            <li class="advantage">
-              <img class="advantage__img" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="Серая фотография">
-              <h3 class="advantage__title">Поднимает настроение</h3>
-              <p class="advantage__description">Приложение позволит вам
-              победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantage">
-              <img class="advantage__img" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="Розовая фотография">
-              <h3 class="advantage__title">Меняет мир вокруг</h3>
-              <p class="advantage__description">Сделайте снимок и украсьте
-              его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantage">
-              <img class="advantage__img" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="Розовая фотография с улыбкой">
-              <h3 class="advantage__title">Заводит новых друзей</h3>
-              <p class="advantage__description advantage__description--img">Ставьте лайки, комментируйте,
-              делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <p class="advantages__screen-img">
-            <img class="advantages__screen-picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото со смаиликом">
-          </p>
+        <div class="advantages__main-wrapper">
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantage">
+                <img class="advantage__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Серая фотография">
+                <h3 class="advantage__title">Поднимает настроение</h3>
+                <p class="advantage__description">Приложение позволит вам
+                победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantage">
+                <img class="advantage__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Розовая фотография">
+                <h3 class="advantage__title">Меняет мир вокруг</h3>
+                <p class="advantage__description">Сделайте снимок и украсьте
+                его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantage">
+                <img class="advantage__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Розовая фотография с улыбкой">
+                <h3 class="advantage__title">Заводит новых друзей</h3>
+                <p class="advantage__description advantage__description--img">Ставьте лайки, комментируйте,
+                делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <p class="advantages__screen-img">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img class="advantages__screen-picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фото со смаиликом">
+              </picture>
+            </p>
+          </div>
         </div>
       </section>
       <section class="impact">

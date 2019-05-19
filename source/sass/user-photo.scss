@@ -38,6 +38,11 @@
   height: 374px;
 }
 
+.user-photo__image {
+  width: 280px;
+  height: 374px;
+}
+
 .user-photo__button-wrapper {
   width: 280px;
   margin: 0 auto;
@@ -115,7 +120,14 @@
   }
 
   .user-photo__picture {
+    width: 300px;
+    height: 400px;
     margin: 0;
+  }
+
+  .user-photo__image {
+    width: 300px;
+    height: 400px;
   }
 
   .user-photo__form-wrapper {
