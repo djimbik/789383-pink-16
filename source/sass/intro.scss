@@ -126,15 +126,15 @@
 
 @media (min-width: 960px) {
   .intro {
-    width: 300px;
+    max-width: 960px;
     margin: 0 auto;
-    margin-left: 130px;
+    // margin-left: 130px;
     padding: 0;
     padding-bottom: 109px;
   }
 
   .intro__wrapper {
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 0;
   }
 
