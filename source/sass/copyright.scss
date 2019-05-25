@@ -14,12 +14,16 @@
   height: 34px;
 }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
+.copyright__logo {
+  fill: #d22856;
+}
+
+.copyright__link:hover .copyright__logo,
+.copyright__link:focus .copyright__logo {
   fill: #283645;
 }
 
-.copyright__link:active path {
+.copyright__link:active .copyright__logo {
   opacity: 0.3;
 }
 

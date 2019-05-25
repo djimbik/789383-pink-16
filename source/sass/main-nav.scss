@@ -26,17 +26,22 @@
   width: 50px;
   height: 22px;
 
+  fill: #ffffff;
   background: none;
   cursor: pointer;
   border: none;
 }
 
-.main-nav__toggle:hover path,
-.main-nav__toggle:focus path {
+.main-nav__toggle-svg--close {
+  display: none;
+}
+
+.main-nav__toggle:hover .main-nav__toggle-svg,
+.main-nav__toggle:focus .main-nav__toggle-svg {
   fill: #d22856;
 }
 
-.main-nav__toggle:active path {
+.main-nav__toggle:active .main-nav__toggle-svg {
   opacity: 0.3;
 }
 
@@ -44,12 +49,21 @@
   height: 22px;
 }
 
-.main-nav__logo:hover path,
-.main-nav__logo:focus path {
+.main-nav__logo-image {
+  fill: #ffffff;
+}
+
+.main-nav__logo-image--tablet,
+.main-nav__logo-image--desktop {
+  display: none;
+}
+
+.main-nav__logo:hover .main-nav__logo-image,
+.main-nav__logo:focus .main-nav__logo-image {
   fill: #d22856;
 }
 
-.main-nav__logo:active path {
+.main-nav__logo:active .main-nav__logo-image {
   fill: #ffffff;
   opacity: 0.3;
 }
@@ -58,46 +72,12 @@
   background-color: #283645;
 }
 
-.main-nav--opened .main-nav__toggle-svg {
+.main-nav--opened .main-nav__toggle-svg--open {
   display: none;
 }
 
-.main-nav--opened .main-nav__toggle {
-  position: relative;
-
-  width: 24px;
-  height: 23px;
-
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-    width: 25px;
-    height: 4px;
-
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.main-nav--opened .main-nav__toggle:hover,  // не понятно что тут делать
-.main-nav--opened .main-nav__toggle:focus {
-  // background-color: #d22856;
-}
-
-.main-nav--opened .main-nav__toggle:active {
-  opacity: 0.3;
+.main-nav--opened .main-nav__toggle-svg--close {
+  display: inline-block;
 }
 
 .main-nav__list {
@@ -134,6 +114,14 @@
   .main-nav__logo {
     height: 40px;
   }
+
+  .main-nav__logo-image--tablet {
+    display: inline-block;
+  }
+
+  .main-nav__logo-image--mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 960px) {
@@ -160,6 +148,14 @@
     width: 150px;
     padding-top: 27px;
     padding-bottom: 42px;
+  }
+
+  .main-nav__logo-image--desktop {
+    display: inline-block;
+  }
+
+  .main-nav__logo-image--tablet {
+    display: none;
   }
 
   .main-nav__toggle {

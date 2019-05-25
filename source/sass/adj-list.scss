@@ -28,22 +28,24 @@
   cursor: pointer;
 }
 
-.adj-list__button:hover .path-main,
-.adj-list__button:focus .path-main {
-  fill: #8d949b;
+.adj-list__logo {
+  fill: #283645;
+  opacity: 0.3;
 }
 
-.adj-list__button:active .path-main {
+.adj-list__logo--active {
   fill: #d22856;
+  opacity: 1;
 }
 
-.adj-list__button--active .path-main {
-  fill: #d22856;
+.adj-list__button:hover .adj-list__logo,
+.adj-list__button:focus .adj-list__logo {
+  opacity: 0.5;
 }
 
-.adj-list__button--active:hover .path-main,
-.adj-list__button--active:focus .path-main {
+.adj-list__button:active .adj-list__logo {
   fill: #d22856;
+  opacity: 1;
 }
 
 .adj-list__controls {

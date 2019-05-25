@@ -82,7 +82,6 @@
   }
 
   .reviews__text {
-
     margin-bottom: 33px;
 
     font-size: 18px;
@@ -144,16 +143,16 @@
     cursor: pointer;
   }
 
-  .reviews__text-wrapper path {
+  .reviews__svg {
     opacity: 0.3;
   }
 
-  .reviews__link:hover path,
-  .reviews__link:focus path {
+  .reviews__link:hover .reviews__svg,
+  .reviews__link:focus .reviews__svg {
     opacity: 1;
   }
 
-  .reviews__link:active {
+  .reviews__link:active .reviews__svg {
     opacity: 0.1;
   }
 

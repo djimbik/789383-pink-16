@@ -24,16 +24,20 @@
   margin-bottom: 40px;
 }
 
-.page-footer__logo:hover path,
-.page-footer__logo:focus path {
-  fill: #d22856;
+.page-footer__logo-image--desktop {
+  display: none;
 }
 
-.page-footer__logo:active .page-footer__pink-svg {
+.page-footer__logo-image {
   fill: #283645;
 }
 
-.page-footer__logo:active path {
+.page-footer__logo:hover .page-footer__logo-image,
+.page-footer__logo:focus .page-footer__logo-image {
+  fill: #d22856;
+}
+
+.page-footer__logo:active .page-footer__logo-image {
   opacity: 0.3;
 }
 
@@ -62,5 +66,13 @@
 @media (min-width: 960px) {
   .page-footer__wrapper {
     width: 940px;
+  }
+
+  .page-footer__logo-image--mobile {
+    display: none;
+  }
+
+  .page-footer__logo-image--desktop {
+    display: inline-block;
   }
 }
