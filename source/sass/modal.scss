@@ -1,0 +1,171 @@
+//modal
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+
+  display: none;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+  background-color: #ffffff;
+}
+
+.error-show {
+  display: block;
+}
+
+.accept-show {
+  display: block;
+}
+
+.modal--error {
+  padding-bottom: 50px;
+}
+
+.modal--accept {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.modal__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.modal__title {
+  display: block;
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.modal__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  text-align: center;
+}
+
+.modal__description--accept {
+  margin-bottom: 30px;
+}
+
+.modal__button {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px 125px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal__button--accept {
+  padding: 17px 67px;
+}
+
+.modal__button-wrapper {
+  padding-top: 48px;
+  padding-bottom: 52px;
+
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 660px) {
+  .modal {
+    width: 460px;
+    padding-top: 35px;
+  }
+
+  .modal__wrapper {
+    width: 320px;
+  }
+
+  .modal__title {
+    margin-bottom: 20px;
+    padding: 0 100px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__title--accept {
+    padding: 0 39px;
+  }
+
+  .modal__description {
+    margin-bottom: 35px;
+    padding: 0 70px;
+
+    font-size: 18px;
+  }
+
+  .modal__description--accept {
+    padding: 0;
+  }
+
+  .modal__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modal {
+    width: 780px;
+    padding-top: 42px;
+  }
+
+  .modal--error {
+    padding-bottom: 0;
+  }
+
+  .modal__wrapper {
+    width: 460px;
+  }
+
+  .modal__error-wrapper {
+    padding-top: 48px;
+    padding-bottom: 52px;
+
+    background-color: #f2f2f2;
+  }
+
+  .modal__description {
+    margin-bottom: 60px;
+    padding: 0 185px;
+  }
+
+  .modal__description--accept {
+    padding: 0;
+  }
+
+  .modal__title--accept {
+    padding: 0;
+  }
+}

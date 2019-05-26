@@ -56,15 +56,15 @@
         <div class="main-form__wrapper user-data__wrapper">
           <p class="user-data__item">
             <label for="user-sername">Фамилия:</label>
-            <input class="user-data__name" id="user-sername" type="text" name="name" placeholder="Укажите фамилию *" required>
+            <input class="user-data__name" id="user-sername" type="text" name="sername" placeholder="Укажите фамилию *" required>
           </p>
           <p class="user-data__item">
             <label for="user-name">Имя:</label>
-            <input class="user-data__name" id="user-name" type="text" name="email" placeholder="Введите ваше имя *" required>
+            <input class="user-data__name" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required>
           </p>
           <p class="user-data__item">
             <label for="user-fullname">Отчество:</label>
-            <input class="user-data__name" id="user-fullname" type="text" name="name" placeholder="Ну и отчество тоже">
+            <input class="user-data__name" id="user-fullname" type="text" name="fullname" placeholder="Ну и отчество тоже">
           </p>
         </div>
       </fieldset>
@@ -108,7 +108,7 @@
           </div>
           <div class="contacts__item contacts__item--mail">
             <label for="user-mail" class="">Адрeс почты</label>
-            <input class="contacts__input" id="user-mail" type="email" name="user-mail" placeholder="Введите почту *" required>
+            <input class="contacts__input" id="user-mail" type="email" name="userMail" placeholder="Введите почту *" required>
           </div>
         </div>
       </fieldset>
@@ -179,7 +179,22 @@
       </div>
     </div>
   </footer>
-
+  <section class="modal modal--error">
+    <b class="modal__title">Что-то пошло не так!</b>
+    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <div class="modal__error-wrapper">
+      <button class="modal__button" type="button">ОК</button>
+    </div>
+  </section>
+  <section class="modal modal--accept">
+    <div class="modal__wrapper">
+      <b class="modal__title modal__title--accept">Ваша заявка отправлена</b>
+      <p class="modal__description modal__description--accept">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+    </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button modal__button--accept" type="button">закрыть окно</button>
+      </div>
+  </section>
 
   <script>
     var navMain = document.querySelector('.main-nav');
@@ -195,6 +210,37 @@
       }
     });
   </script>
+
+  <script type="text/javascript">
+    var link = document.querySelector('.main-form__button');
+    var popupError = document.querySelector('.modal--error');
+    var popupAccept = document.querySelector('.modal--accept');
+    var close = document.querySelectorAll(".modal__button");
+    var form = document.querySelector(".main-form");
+    var sername = form.querySelector("[name=sername]");
+    var userName = form.querySelector("[name=name]");
+    var userMail = form.querySelector("[name=userMail]");
+
+    link.addEventListener("click", function (evt) {
+      if (!sername.value || !userName.value || !userMail.value) {
+        evt.preventDefault();
+        popupError.classList.add("error-show");
+      }
+      });
+
+    close.forEach(function (item) {
+      item.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popupError.classList.remove("error-show");
+        popupAccept.classList.remove("accept-show");
+      });
+    })
+
+    form.addEventListener("submit", function(evt) {
+      evt.preventDefault();
+      popupAccept.classList.add("accept-show");
+    })
+
+  </script>
 </body>
 </html>
-<!-- сделать поп апы -->

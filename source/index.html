@@ -289,18 +289,12 @@
           navMain.classList.add('main-nav--opened');
         }
       });
-
-
     </script>
     <script>
-      // Initialize and add the map
       function initMap() {
-        // The location of Uluru
         var spb = {lat: 59.938856, lng: 30.323037};
-        // The map, centered at Uluru
         var map = new google.maps.Map(
             document.querySelector('.map'), {zoom: 15, center: spb});
-        // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: spb, map: map});
       }
     </script>
