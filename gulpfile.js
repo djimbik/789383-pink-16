@@ -16,7 +16,8 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var svgo = require("gulp-svgo");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -31,6 +32,13 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("compress", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function () {
@@ -55,11 +63,6 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(svgo({
-      removeUselessDefs:false,
-      removeViewBox:false,
-      cleanupIDs:false
-    }))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -105,6 +108,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "compress",
   "sprite",
   "html"
 ));

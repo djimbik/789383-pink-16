@@ -210,8 +210,6 @@
                   <svg class="adj-list__logo adj-list__logo--active" width="48" height="48"><use xlink:href="#sprite-icon-editor-crop"></use></svg>
                 </button>
                 <div class="adj-list__controls adj-list__controls--active">
-                  <!-- <div class="adj-list__scale"></div>
-                  <button class="adj-list__toggle adj-list__toggle--crop" type="button"></button> -->
                   <input type="range" min="0" max="100" value="81" class="adj-list__range adj-list__range--crop">
                 </div>
               </div>
@@ -279,19 +277,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--opened')) {
-        navMain.classList.remove('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--opened');
-      }
-    });
-  </script>
+  <script type="text/javascript" src="js/script.min.js"></script>
+  <script type="text/javascript" src="js/picturefill.min.js"></script>
 </body>
 </html>
