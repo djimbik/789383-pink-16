@@ -1,0 +1,144 @@
+//page-main
+
+.page-main {
+  position: relative;
+}
+
+.page-main--inner {
+  background: none;
+}
+
+.page-main__wrapper {
+  padding-top: 97px;
+  padding-bottom: 83px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #ffffff;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.page-main__wrapper--form {
+  padding-bottom: 55px;
+}
+
+.page-main__title {
+  width: 175px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: transparent;
+}
+
+.page-main__title--form-title {
+  width: 240px;
+}
+
+.page-main__description {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  padding-top: 45px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.page-main__description span {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-main--inner {
+    min-height: auto;
+
+    background: none;
+  }
+
+  .page-main__wrapper {
+    padding-top: 180px;
+    padding-bottom: 140px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-main__wrapper--form {
+    padding-bottom: 79px;
+  }
+
+  .page-main__title {
+    width: 370px;
+    padding: 0;
+
+    font-size: 50px;
+  }
+
+  .page-main__title--form-title {
+    width: 480px;
+  }
+
+  .page-main__description {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding-top: 93px;
+
+    font-size: 18px;
+  }
+
+  .page-main__description span {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-main--inner {
+    min-height: auto;
+
+    background: none;
+  }
+
+  .page-main__wrapper {
+    padding-top: 172px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .page-main__title--form-title {
+    width: 750px;
+  }
+
+  .page-main__description {
+    width: 765px;
+    margin-bottom: 72px;
+  }
+
+  .page-main__description span {
+    display: inline;
+  }
+}

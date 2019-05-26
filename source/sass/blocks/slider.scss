@@ -1,0 +1,48 @@
+//slider
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding-left: 45px;
+}
+
+.slider--table {
+  padding-left: 68px;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin-right: 15px;
+
+  background-color: #bec2c7;
+
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__toggle--active {
+  background-color: #ffffff;
+
+  border: 3px solid #283645;
+}
+
+@media (min-width: 660px) {
+  .slider {
+    padding-left: 220px;
+  }
+
+  .slider--table {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider--reviews {
+    display: none;
+  }
+}

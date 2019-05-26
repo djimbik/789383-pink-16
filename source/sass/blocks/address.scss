@@ -1,0 +1,180 @@
+//address
+
+.address {
+  background-color: #ffffff;
+}
+
+.address__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  background-color: #ffffff;
+}
+
+.address__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+  color: #283645;
+}
+
+.address__text {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.address__action {
+  margin-bottom: 2px;
+
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  color: #283645;
+}
+
+.address__description {
+  display: inline-block;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+  color: #d22856;
+}
+
+.address__description--street {
+  margin-top: 4px;
+}
+
+.address__description--mail {
+  margin-top: 4px;
+  margin-left: 44px;
+}
+
+.address__description--mail:hover,
+.address__description--mail:focus {
+  color: #283645;
+  border-bottom: 1px solid #283645;
+
+  cursor: pointer;
+}
+
+.address__description--mail:active {
+  opacity: 0.3;
+
+  border: none;
+}
+
+@media (min-width: 660px) {
+  .address__wrapper {
+    width: 660px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 26px;
+
+    &::after {
+      width: 660px;
+    }
+  }
+
+  .address__title {
+    width: 660px;
+    margin-bottom: 45px;
+
+    font-size: 40px;
+  }
+
+  .address__text {
+    display: flex;
+    width: 300px;
+    margin-bottom: 48px;
+  }
+
+  .address__text--street {
+    width: 660px;
+    margin-bottom: 0;
+  }
+
+  .address__action {
+    margin-bottom: 5px;
+  }
+
+  .address__action--tel,
+  .address__description--tel {
+    padding-right: 21px;
+  }
+
+  .address__action--mail {
+    padding-left: 22px;
+  }
+
+  .address__description--mail {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .address__wrapper {
+    width: 960px;
+    padding: 0;
+    padding-top: 65px;
+
+    &::after {
+      width: 960px;
+      top: 395px;
+    }
+  }
+
+  .address__title {
+    width: 960px;
+    margin-bottom: 57px;
+
+    font-size: 50px;
+  }
+
+  .address__text {
+    width: 300px;
+  }
+
+  .address__text--mail {
+    order: 4;
+  }
+
+  .address__action {
+    margin-bottom: 25px;
+  }
+
+  .address__action--tel,
+  .address__description--tel {
+    padding-right: 43px;
+  }
+
+  .address__action--mail {
+    padding-left: 38px;
+  }
+
+  .address__description--mail {
+    margin-left: 49px;
+  }
+
+  .address__description--street {
+    margin-top: 0;
+  }
+}

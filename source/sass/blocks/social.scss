@@ -1,0 +1,42 @@
+//social
+
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  @include list-style;
+  padding: 0 51px;
+  margin-bottom: 39px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+}
+
+.social__logo {
+  fill: #d22856;
+}
+
+.social__link:hover,
+.social__link:focus {
+  border: 3px solid #283645;
+}
+
+.social__link:active {
+  border: 3px solid #e9ebec;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .social {
+    width: 178px;
+    padding: 0;
+  }
+}

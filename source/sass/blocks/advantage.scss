@@ -1,0 +1,95 @@
+//advantage
+
+.advantage__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantage__description {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.advantage__description--img {
+  margin-bottom: 0;
+}
+
+.advantage__img {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .advantage__title {
+    margin-bottom: 12px;
+  }
+
+  .advantage__description {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  .advantage__description--img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .advantage {
+    padding: 0;
+    width: 320px;
+  }
+
+  .advantage__title {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 0 40px;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantage__title--img {
+    margin-left: 13px;
+  }
+
+  .advantage__description {
+    width: 248px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantage__description--img {
+    margin-left: 41px;
+  }
+
+  .advantage__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    margin-left: 6px;
+  }
+
+  .advantage__img--pink {
+    margin-left: 16px;
+  }
+
+  .advantage__img--smile {
+    margin-left: 22px;
+  }
+}

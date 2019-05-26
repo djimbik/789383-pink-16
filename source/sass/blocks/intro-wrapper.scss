@@ -1,0 +1,63 @@
+//intro-wrapper
+
+.intro-wrapper {
+  padding-top: 462px;
+
+  background-image:
+    url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size:
+    258px 286px,
+    100%;
+  background-position:
+    left 176px,
+    center top;
+  background-color: #2a3746;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: 660px) {
+  .intro-wrapper {
+    padding-top: 204px;
+    margin: 0 auto;
+
+    background-image:
+      url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-size:
+      660px 545px,
+      1200px 729px;
+    background-position:
+      10px 185px,
+      center top;
+    background-color: #283645;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/iphone-hand-tablet@2x.png"),
+        url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .intro-wrapper {
+    padding-bottom: 0;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 2560px 853px;
+    background-position: center top;
+    background-color: transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+}
