@@ -23,6 +23,10 @@
   }
 }
 
+.page-main__wrapper--form {
+  padding-bottom: 55px;
+}
+
 .page-main__title {
   width: 175px;
   margin: 0 auto;
@@ -43,7 +47,7 @@
 
 .page-main__description {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   padding: 0;
   padding-top: 45px;
 
@@ -76,6 +80,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .page-main__wrapper--form {
+    padding-bottom: 79px;
   }
 
   .page-main__title {
@@ -127,7 +135,7 @@
 
   .page-main__description {
     width: 765px;
-    margin-bottom: 65px;
+    margin-bottom: 72px;
   }
 
   .page-main__description span {

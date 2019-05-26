@@ -1,7 +1,7 @@
 //user-photo
 
 .user-photo {
-  padding-top: 30px;
+  padding-top: 21px;
 }
 
 .user-photo__title {
@@ -51,7 +51,6 @@
 .user-photo__button {
   display: flex;
   width: 100%;
-  margin-top: 38px;
   padding-top: 15px;
   padding-right: 88px;
   padding-bottom: 17px;
@@ -82,13 +81,16 @@
 }
 
 .user-photo__button--cancel {
-  margin-top: 12px;
   padding-right: 102px;
   padding-left: 102px;
 
   color: rgba(40, 54, 69, 0.1);
 
   border: 3px solid #dddfe0;
+}
+
+.user-photo__button--submit {
+  margin-bottom: 12px;
 }
 
 .user-photo__button--cancel:hover,
@@ -116,6 +118,7 @@
   }
 
   .user-photo__form {
+    padding-top: 56px;
     padding-bottom: 54px;
   }
 
@@ -151,9 +154,27 @@
     margin-left: 1px;
     width: 260px;
   }
+
+  .user-photo__button {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+
+  .user-photo__button--submit {
+    margin-bottom: 23px;
+  }
+
+  .user-photo__button--cancel {
+    padding-left: 87px;
+  }
 }
 
 @media (min-width: 960px) {
+  .user-photo {
+    padding-top: 8px;
+    margin-bottom: 25px;
+  }
+
   .user-photo__title {
     width: 620px;
     margin-bottom: 65px;
@@ -162,6 +183,7 @@
 
   .user-photo__form {
     padding-top: 55px;
+    padding-bottom: 60px;
   }
 
   .user-photo__form-wrapper {
@@ -171,10 +193,11 @@
   .user-photo__form-container--left {
     width: 391px;
     margin: 0;
+    margin-left: 11px;
   }
 
   .user-photo__form-container--right {
-    width: 410px;
+    width: 400px;
   }
 
   .user-photo__button-wrapper {
@@ -194,6 +217,9 @@
   .user-photo__button--cancel {
     padding-right: 50px;
     padding-left: 55px;
-    margin-top: auto;
+  }
+
+  .user-photo__button--submit {
+    margin-bottom: 0;
   }
 }

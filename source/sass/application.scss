@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 6px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 
   background-color: #f2f2f2;
 }
@@ -19,8 +19,8 @@
 
 .application__title {
   padding: 0 50px;
-  padding-top: 32px;
-  margin-bottom: 29px;
+  padding-top: 37px;
+  margin-bottom: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -37,7 +37,7 @@
 }
 
 .application__item {
-  margin-bottom: 36px;
+  margin-bottom: 43px;
 }
 
 .application__item label {
@@ -103,6 +103,7 @@
 
   .application__field {
     width: 616px;
+    padding-bottom: 15px;
 
     border: 2px solid #e5e5e5;
   }
@@ -110,7 +111,7 @@
   .application__title {
     padding: 0 25px;
     padding-top: 0;
-    margin-bottom: 38px;
+    margin-bottom: 47px;
 
     background-color: #ffffff;
   }
@@ -130,6 +131,6 @@
   }
 
   .application__list {
-    margin-left: 74px;
+    margin-left: 79px;
   }
 }

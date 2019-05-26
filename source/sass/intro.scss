@@ -48,7 +48,7 @@
 
   @include list-style;
   margin: 0 auto;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 .intro__application {
@@ -57,7 +57,7 @@
   height: 56px;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .intro__application--apple {
@@ -86,7 +86,7 @@
 @media (min-width: 660px) {
   .intro {
     padding: 0;
-    padding-bottom: 90px;
+    padding-bottom: 110px;
 
     background-color: transparent;
   }
@@ -113,10 +113,14 @@
 
   .intro__save-button {
     margin-bottom: 45px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+    padding-left: 47px;
+    padding-right: 0;
   }
 
   .intro__list {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 
   .intro__text {
@@ -129,11 +133,23 @@
     width: 960px;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 109px;
+    padding-bottom: 123px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    background-position: 26px 6px;
+    background-color: transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 
   .intro__wrapper {
     padding: 0;
+    padding-top: 14px;
+    margin-left: 9px;
   }
 
   .intro__title {
@@ -146,5 +162,12 @@
 
   .intro__save-button {
     margin-bottom: 67px;
+    padding-left: 29px;
+
+    font-size: 21px;
+  }
+
+  .intro__list {
+    margin-bottom: 30px;
   }
 }

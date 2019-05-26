@@ -84,20 +84,29 @@
           <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantage">
-                <img class="advantage__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Серая фотография">
+                <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                  <img class="advantage__img advantage__img--grey" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Серая фотография">
+                </picture>
                 <h3 class="advantage__title">Поднимает настроение</h3>
                 <p class="advantage__description">Приложение позволит вам
                 победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantage">
-                <img class="advantage__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Розовая фотография">
+                <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                  <img class="advantage__img advantage__img--pink" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Розовая фотография">
+                </picture>
                 <h3 class="advantage__title">Меняет мир вокруг</h3>
                 <p class="advantage__description">Сделайте снимок и украсьте
-                его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
               </li>
               <li class="advantage">
-                <img class="advantage__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Розовая фотография с улыбкой">
-                <h3 class="advantage__title">Заводит новых друзей</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                  <img class="advantage__img advantage__img--smile" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Розовая фотография с улыбкой">
+                </picture>
+                <h3 class="advantage__title advantage__title--img">Заводит новых друзей</h3>
                 <p class="advantage__description advantage__description--img">Ставьте лайки, комментируйте,
                 делитесь фотографиями с друзьями и заводите новых</p>
               </li>
@@ -116,14 +125,17 @@
       <section class="impact">
         <div class="impact__wrapper container">
           <div class="impact__image">
-            <img class="impact__watch" src="img/timer24.png" width="298" height="345" alt="Иконка часов">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/timer24.png">
+              <img class="impact__watch" src="img/timer24-tablet.png" alt="Иконка часов">
+            </picture>
           </div>
           <div class="impact__description">
-            <b class="impact__title">Эффект на 24 часа!</b>
+            <b class="impact__title">Эффект на&nbsp;24 часа!</b>
             <p class="impact__text">Британские ученые провели исследования
-              и доказали, что&nbsp;положительный эффект
+              и&nbsp;доказали, что&nbsp;положительный эффект
               от&nbsp;использования приложения длится
-              целые сутки!</p>
+              целые&nbsp;сутки!</p>
             <a class="impact__detailes" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -134,7 +146,7 @@
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__author-about">25 лет, водитель трамвая</p>
             <div class="reviews__text-wrapper">
-              <button class="reviews__link" type="button">
+              <button class="reviews__link reviews__link--left" type="button">
                 <svg class="reviews__svg" width="22" height="41"><use xlink:href="#sprite-icon-review-arrow-left"></use></svg>
               </button>
               <p class="reviews__text">
@@ -142,7 +154,7 @@
                 взглянуть на привычные серые вещи! А еще я познакомился со
                 своей будущей женой в комментариях к выложенной фотографии!»
               </p>
-              <button class="reviews__link" type="button">
+              <button class="reviews__link reviews__link--right" type="button">
                 <svg class="reviews__svg" width="22" height="41"><use xlink:href="#sprite-icon-review-arrow-right"></use></svg>
               </button>
             </div>
@@ -212,16 +224,16 @@
             Свяжитесь с нами!
           </p>
           <p class="address__text">
-            <span class="address__action">Звоните:</span>
-            <span class="address__description">+7 (812) 555-66-66</span>
+            <span class="address__action address__action--tel">Звоните:</span>
+            <span class="address__description address__description--tel">+7 (812) 555-66-66</span>
           </p>
           <p class="address__text address__text--mail">
-            <span class="address__action">Пишите:</span>
+            <span class="address__action address__action--mail">Пишите:</span>
             <a class="address__description address__description--mail">mail@htmlacademy.ru</a>
           </p>
           <p class="address__text address__text--street">
             <span class="address__action">Приезжайте в гости:</span>
-            <span class="address__description">ул. Большая<br> Конюшенная, 19/8</span>
+            <span class="address__description address__description--street">ул. Большая<br> Конюшенная, 19/8</span>
           </p>
         </div>
         <div class="map">

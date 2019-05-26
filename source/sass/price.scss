@@ -13,7 +13,7 @@
 .price__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 90px;
 
   overflow: hidden;
 
@@ -22,7 +22,7 @@
 
 .price__list {
   width: 840px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   border-collapse: collapse;
   border-spacing: 0;
@@ -141,8 +141,8 @@
     content: "";
 
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 10px;
+    right: 18px;
 
     width: 27px;
     height: 26px;
@@ -162,7 +162,7 @@
   .price__wrapper {
     width: 620px;
     margin: 0 auto;
-    padding-bottom: 68px;
+    padding-bottom: 33px;
     padding-top: 88px;
 
     overflow: visible;
@@ -195,7 +195,8 @@
 
   .price__value {
     padding-top: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
 
     font-size: 16px;
   }
@@ -264,7 +265,7 @@
 @media (min-width: 960px) {
   .price__wrapper {
     width: 940px;
-    padding-bottom: 95px;
+    padding-bottom: 55px;
     padding-top: 150px;
   }
 

@@ -88,7 +88,7 @@
 
   order: 3;
   padding-bottom: 22px;
-  padding-left: 21px;
+  padding-left: 32px;
 
   font-size: 12px;
   line-height: 24px;
@@ -138,7 +138,7 @@
   }
 
   .photo-main__img {
-    width: 100%; //временно
+    width: 100%;
     height: 509px;
   }
 
@@ -165,7 +165,7 @@
   }
 
   .photo-main__like::before {
-    left: 126px;
+    left: 136px;
   }
 
   .photo-main__list {
@@ -187,9 +187,9 @@
   }
 
   .photo-main__link::after {
-    left: 77.5%;
-    right: 10.83%;
-    top: 54px;
+    left: 84.5%;
+    right: 15.5%;
+    top: 52px;
   }
 
   .photo-main__img {
@@ -198,7 +198,8 @@
 
   .photo-main__comment {
     width: 870px;
-    padding-right: 45px;
+    padding-right: 43px;
+    padding-top: 22px;
   }
 
   .photo-main__text {

@@ -9,7 +9,7 @@
 }
 
 .photo-item__comment {
-  padding-top: 18px;
+  padding-top: 10px;
   padding-left: 18px;
 
   background-color: #f2f2f2;
@@ -57,8 +57,8 @@
   position: relative;
 
   display: flex;
-  padding-left: 21px;
-  padding-bottom: 22px;
+  padding-left: 32px;
+  padding-bottom: 20px;
 
   font: inherit;
   font-size: 12px;
@@ -91,7 +91,7 @@
   .photo-item__comment {
     display: flex;
     flex-direction: column;
-    min-height: 155px;
+    min-height: 130px;
 
     padding-top: 25px;
     padding-left: 25px;
@@ -128,6 +128,15 @@
 }
 
 @media (min-width: 960px) {
+  .photo-item {
+    margin-bottom: 54px;
+  }
+
+  .photo-item__comment {
+    padding-top: 23px;
+    padding-left: 23px;
+  }
+
   .photo-item__link {
     height: 400px;
   }

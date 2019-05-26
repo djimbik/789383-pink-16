@@ -22,19 +22,24 @@
     margin-left: 20px;
   }
 
+  .impact__watch {
+    width: 238px;
+    height: 276px;
+  }
+
   .impact__description {
     width: 324px;
     padding: 0;
     padding-top: 40px;
 
-    margin-left: 70px;
+    margin-left: 10px;
   }
 
   .impact__title {
     display: block;
     padding: 0;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 9px;
     width: 170px;
 
     font-size: 30px;
@@ -47,7 +52,7 @@
   .impact__text {
     padding: 0;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 4px;
 
     font-size: 14px;
     line-height: 24px;
@@ -82,13 +87,19 @@
     width: 300px;
 
     margin: 0;
-    padding-bottom: 67px;
+    padding-bottom: 55px;
+  }
+
+  .impact__watch {
+    width: 298px;
+    height: 345px;
   }
 
   .impact__description {
     width: 570px;
 
-    padding-top: 93px;
+    padding-top: 91px;
+    margin-left: 68px;
   }
 
   .impact__title {
@@ -101,7 +112,7 @@
 
   .impact__text {
     width: 530px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     font-size: 18px;
     line-height: 30px;
   }

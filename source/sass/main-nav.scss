@@ -18,11 +18,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 19px;
+  padding-bottom: 25px;
 }
 
 .main-nav__toggle {
+  display: flex;
+  justify-content: flex-end;
   width: 50px;
   height: 22px;
 
@@ -30,6 +32,10 @@
   background: none;
   cursor: pointer;
   border: none;
+}
+
+.main-nav__toggle-svg {
+  margin-right: -7px;
 }
 
 .main-nav__toggle-svg--close {
@@ -121,6 +127,10 @@
 
   .main-nav__logo-image--mobile {
     display: none;
+  }
+
+  .main-nav__toggle {
+    margin-top: 16px;
   }
 }
 

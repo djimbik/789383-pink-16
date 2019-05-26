@@ -5,34 +5,15 @@
 }
 
 .address__wrapper {
-  // position: relative;
-  // z-index: 5;
-
   width: 320px;
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 55px;
+  padding-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   background-color: #ffffff;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 445px;
-  //   left: 0;
-  //   z-index: 100;
-
-  //   width: 320px;
-  //   height: 123px;
-
-  //   background-image: url("../img/bg-triangle-white-footer.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: top center;
-  //   background-size: 100%;
-  // }
 }
 
 .address__title {
@@ -53,7 +34,7 @@
 
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .address__action {
@@ -77,6 +58,15 @@
   color: #d22856;
 }
 
+.address__description--street {
+  margin-top: 4px;
+}
+
+.address__description--mail {
+  margin-top: 4px;
+  margin-left: 44px;
+}
+
 .address__description--mail:hover,
 .address__description--mail:focus {
   color: #283645;
@@ -95,8 +85,9 @@
   .address__wrapper {
     width: 660px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    padding-bottom: 26px;
 
     &::after {
       width: 660px;
@@ -105,17 +96,37 @@
 
   .address__title {
     width: 660px;
+    margin-bottom: 45px;
 
     font-size: 40px;
   }
 
   .address__text {
+    display: flex;
     width: 300px;
     margin-bottom: 48px;
   }
 
   .address__text--street {
     width: 660px;
+    margin-bottom: 0;
+  }
+
+  .address__action {
+    margin-bottom: 5px;
+  }
+
+  .address__action--tel,
+  .address__description--tel {
+    padding-right: 21px;
+  }
+
+  .address__action--mail {
+    padding-left: 22px;
+  }
+
+  .address__description--mail {
+    margin-left: 40px;
   }
 }
 
@@ -123,7 +134,7 @@
   .address__wrapper {
     width: 960px;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 65px;
 
     &::after {
       width: 960px;
@@ -133,7 +144,7 @@
 
   .address__title {
     width: 960px;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 
     font-size: 50px;
   }
@@ -148,5 +159,22 @@
 
   .address__action {
     margin-bottom: 25px;
+  }
+
+  .address__action--tel,
+  .address__description--tel {
+    padding-right: 43px;
+  }
+
+  .address__action--mail {
+    padding-left: 38px;
+  }
+
+  .address__description--mail {
+    margin-left: 49px;
+  }
+
+  .address__description--street {
+    margin-top: 0;
   }
 }

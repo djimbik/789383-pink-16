@@ -4,15 +4,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  margin: 0 auto;
+  width: 200px;
+  padding-left: 45px;
+}
+
+.slider--table {
+  padding-left: 68px;
 }
 
 .slider__toggle {
   width: 6px;
   height: 6px;
   padding: 0;
-  margin-right: 13px;
+  margin-right: 15px;
 
   background-color: #bec2c7;
 
@@ -28,6 +32,10 @@
 }
 
 @media (min-width: 660px) {
+  .slider {
+    padding-left: 220px;
+  }
+
   .slider--table {
     display: none;
   }

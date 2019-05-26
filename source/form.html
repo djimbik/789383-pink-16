@@ -45,7 +45,7 @@
     </nav>
   </header>
   <main class="page-main page-main--inner">
-    <div class="page-main__wrapper">
+    <div class="page-main__wrapper page-main__wrapper--form">
       <h2 class="page-main__title page-main__title--form-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <div class="main-form__wrapper">
@@ -56,11 +56,11 @@
         <div class="main-form__wrapper user-data__wrapper">
           <p class="user-data__item">
             <label for="user-sername">Фамилия:</label>
-            <input class="user-data__name" id="user-sername" type="text" name="name" placeholder="Укажите фамилию *">
+            <input class="user-data__name" id="user-sername" type="text" name="name" placeholder="Укажите фамилию *" required>
           </p>
           <p class="user-data__item">
             <label for="user-name">Имя:</label>
-            <input class="user-data__name" id="user-name" type="text" name="email" placeholder="Введите ваше имя *">
+            <input class="user-data__name" id="user-name" type="text" name="email" placeholder="Введите ваше имя *" required>
           </p>
           <p class="user-data__item">
             <label for="user-fullname">Отчество:</label>
@@ -104,11 +104,11 @@
         <div class="contacts__wrapper">
           <div class="contacts__item contacts__item--phone">
             <label for="user-phone">Номер телефона</label>
-            <input class="contacts__input" id="user-phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+            <input class="contacts__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
           </div>
           <div class="contacts__item contacts__item--mail">
             <label for="user-mail" class="">Адрeс почты</label>
-            <input class="contacts__input" id="user-mail" type="text" name="user-mail" placeholder="Введите почту *">
+            <input class="contacts__input" id="user-mail" type="email" name="user-mail" placeholder="Введите почту *" required>
           </div>
         </div>
       </fieldset>
@@ -144,7 +144,7 @@
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper page-footer__wrapper--form">
       <a class="page-footer__logo" href="#">
         <span class="visually-hidden">Логотип Пинк</span>
         <svg class="page-footer__logo-image page-footer__logo-image--mobile" width="147" height="40"><use xlink:href="#sprite-logo-pink-blue-mobile"></use></svg>
@@ -179,6 +179,8 @@
       </div>
     </div>
   </footer>
+
+
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');

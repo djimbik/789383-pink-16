@@ -23,7 +23,7 @@
 
 @media (min-width: 660px) {
   .photos {
-    padding-top: 95px;
+    padding-top: 90px;
   }
 
   .photos__title {
@@ -43,6 +43,10 @@
 }
 
 @media (min-width: 960px) {
+  .photos {
+    padding-top: 94px;
+  }
+
   .photos__title {
     width: 600px;
     margin-bottom: 90px;

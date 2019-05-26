@@ -27,9 +27,9 @@
 
 .user-data__name {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-left: 20px;
   margin-bottom: 18px;
 
   vertical-align: middle;
@@ -55,6 +55,10 @@ input.user-data__name::placeholder {
 }
 
 @media (min-width: 660px) {
+  .user-data {
+    margin-bottom: 4px;
+  }
+
   .user-data__item {
     display: flex;
 
@@ -63,13 +67,15 @@ input.user-data__name::placeholder {
 
   .user-data__item label {
     margin-right: 20px;
-    padding-top: 13px;
+    padding-top: 20px;
+    padding-left: 0;
 
     vertical-align: middle;
   }
 
   .user-data__name {
     margin-bottom: 52px;
+    padding-bottom: 22px;
   }
 }
 
@@ -85,5 +91,14 @@ input.user-data__name::placeholder {
 
   .user-data__item {
     width: 436px;
+  }
+
+  .user-data__item label {
+    padding-top: 31px;
+  }
+
+  .user-data__name {
+    margin-top: 14px;
+    margin-bottom: 38px;
   }
 }
