@@ -139,8 +139,12 @@
   .achievements__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 60px;
+  }
 
-    width: 820px;
+  .achievements__item {
+    width: 260px;
   }
 
   .achievements__item--selfie-shark {
@@ -165,38 +169,5 @@
 
   .achievements__item--hotel {
     order: -5;
-  }
-
-  .achievements__item:nth-child(3n+1) {
-    width: 260px;
-    margin-right: 55px;
-  }
-
-  .achievements__item:nth-child(3n+2) {
-    width: 240px;
-    margin-right: 55px;
-  }
-
-  .achievements__item:nth-child(3n+3) {
-    width: 210px;
-    margin-right: 0;
-  }
-
-  .achievements__list .achievements__item--selfie-shark,
-  .achievements__list .achievements__item--sunburn {
-    width: 260px;
-    margin-right: 55px;
-  }
-
-  .achievements__list .achievements__item--chuck,
-  .achievements__list .achievements__item--gifts {
-    width: 240px;
-    margin-right: 55px;
-  }
-
-  .achievements__list .achievements__item--tower,
-  .achievements__list .achievements__item--hotel {
-    width: 210px;
-    margin-right: 0;
   }
 }
