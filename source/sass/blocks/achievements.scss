@@ -139,12 +139,12 @@
   .achievements__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-left: 60px;
   }
 
   .achievements__item {
     width: 260px;
+    margin-right: 32px;
   }
 
   .achievements__item--selfie-shark {
